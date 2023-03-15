@@ -14,5 +14,10 @@ pipeline {
         stage('stage2-complete') {
                         steps {echo "stage2 finished"}
     }
+ stages {
+        stage('stage 3') {
+                        steps {echo 'running stage3'}
+        }
+ }
 }
 }
