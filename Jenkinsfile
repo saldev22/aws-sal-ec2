@@ -5,19 +5,17 @@ pipeline {
         timeout(time: 20, unit: 'SECONDS')
     }
     stages {
-        stage('stage1') {
-                        steps {echo 'running stage1'}
+        stage('stage1 test') {
+                        steps {echo 'running test'}
         }
-        stage('stage2') {
-                        steps {echo 'running stage2'}
+        stage('stage2 build') {
+                        steps {echo 'running build'}
         }   
-        stage('stage2-complete') {
-                        steps {echo "stage2 finished"}
+        stage('stage2 deploy') {
+                        steps {echo "stage2 deploy"}
     }
- stages {
-        stage('stage 3') {
-                        steps {echo 'running stage3'}
+        stage('finished') {
+                        steps {echo 'ec2 build finished'}
         }
- }
 }
 }
