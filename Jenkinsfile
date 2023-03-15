@@ -8,11 +8,11 @@ pipeline {
         stage('stage1') {
                         steps {echo 'running stage1' }
         }
-        },
     stages {
         stage('stage2') {
                         steps {echo 'running stage2' }
             echo "stage2 finished"
         }
     }
+}
 }
